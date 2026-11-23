@@ -1,12 +1,10 @@
 # NicePNG
 
 NicePNG is a small native PNGTuber app written in Swift/AppKit. It listens to your microphone and swaps
-between an idle image and a talking image, with a bounce while you speak. No Xcode project
-required: `build.sh` compiles everything with `swiftc` and assembles a signed `.app`.
+between an idle image and a talking image, with a bounce while you speak.
 
 ## Requirements
-- macOS 12 or later
-- Xcode Command Line Tools: `xcode-select --install`
+- macOS 12 or late
 
 ## Using it
 - Right-click the avatar (or press Cmd+,) for Settings.
@@ -25,3 +23,9 @@ required: `build.sh` compiles everything with `swiftc` and assembles a signed `.
 - The app is ad-hoc signed, so macOS may ask for microphone permission again after a rebuild.
   If it gets stuck: `tccutil reset Microphone com.example.nicepng`
 - Change the app name or bundle ID at the top of `build.sh`.
+
+# Installation
+1. Visit the [NicePNG Releases page](https://github.com/NiceSky-Studios/NicePNG/releases).
+2. Download the latest DMG.
+3. Move NicePNG to your Applications and open it.
+4. Grant it the permissions asked for.
